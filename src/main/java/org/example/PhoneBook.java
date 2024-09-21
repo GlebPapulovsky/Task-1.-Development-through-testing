@@ -30,6 +30,9 @@ public class PhoneBook {
         }
         return "";
     }
+    public void printAllNames(){
+        System.out.println("");
+    }
 
 
 }
