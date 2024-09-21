@@ -14,7 +14,12 @@ public class PhoneBook {
         return 0;
     }
     public String findByNumber(String number){
-        return "";
+        for(String key:map.keySet()){
+            if (map.get(key).equals(number)){
+                return key;
+            }
+        }
+        return "No one";
     }
 
 }
