@@ -1,6 +1,7 @@
 package org.example;
 
-import java.util.HashMap;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class PhoneBook {
     HashMap<String,String>map=new HashMap<>();
@@ -31,7 +32,13 @@ public class PhoneBook {
         return "";
     }
     public void printAllNames(){
-        System.out.println("");
+        List<String> sortedList=new ArrayList<>(map.keySet());
+        Collections.sort(sortedList);
+        for (int counter=0;counter< sortedList.size();counter++){
+            System.out.println(counter+1+".Name: "+sortedList.get(counter)+" - number: "+map.get(sortedList.get(counter)));
+        }
+
+
     }
 
 
