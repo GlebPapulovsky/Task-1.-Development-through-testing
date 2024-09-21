@@ -5,8 +5,8 @@ import org.junit.Test;
 public class PhoneBookTest {
 
     @Test
-    public  void addTest(){
-        PhoneBook phoneBook=new PhoneBook();
-        Assert.assertEquals(1,phoneBook.add());
+    public void addTest() {
+        PhoneBook phoneBook = new PhoneBook();
+        Assert.assertEquals(1, phoneBook.add("alex", "11111111111"));
     }
 }
